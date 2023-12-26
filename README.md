@@ -10,4 +10,4 @@
   ![Project1-diagram1](https://github.com/Noettie/End-to-End-automated-CI-CD-Pipeline-utilizing-GitOps-PART-ONE/assets/108426517/b56293f8-f11e-4745-80eb-edb06a1f4eb1) 
 
 
-  ### This part of the project is the Continous Deployment part. 
+  ### :bookmark: This part of the project is the Continous Deployment part. 

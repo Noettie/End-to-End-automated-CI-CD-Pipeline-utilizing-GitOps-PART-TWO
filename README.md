@@ -169,7 +169,7 @@ Configure webhooks on Jenkins
 40. Create a bug in the application. Make changes to the Cart microservice.
 * Argocd is constantly watching the manifest repository looking for any change.
 * When a change is made to the src code, this change will trigger a build on Jenkins and a new image of the microservice is created.
-* The first build triggers the second job and automatically updates the image in thedeployment.yml
+* The first build triggers the second job ( which contains manifest file) and automatically updates the manifest with the new image in the deployment.yml
 * Argocd will pickup the changes on the deploment file and deploys the application into the kurbenetes cluster.
 * Argocd compares the state of the kurbernetes cluster and if there is a drift, it will effect the new changes.
   

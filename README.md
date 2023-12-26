@@ -175,7 +175,7 @@ Configure webhooks on Jenkins
   
 ![amazon-cd-jenkins](https://github.com/Noettie/End-to-End-automated-CI-CD-Pipeline-utilizing-GitOps-PART-ONE/assets/108426517/219956c0-0803-4f2f-b362-c4b8a68fd766)
 
-### Congratulations you have successfully completed a CICD pipeline for an e-commerce application. 
+### Congratulations you have successfully completed a CICD pipeline for an e-commerce application !
 
 
 

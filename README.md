@@ -11,7 +11,7 @@
 
 
   
- ### :bookmark: This part of the project is the Continous Deployment part. 
+ ### :bookmark: This part of the project is called Continous Deployment. 
 
 ### Objectives
 

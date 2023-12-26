@@ -40,8 +40,47 @@
 * Argocd deploys new application onto kubernetes cluster
 
 _NB: Two repositories required for 2 Jenkins jobs._
+### Prereguisites:
+_Install argocd_
 
 ### CD Steps:
+
+1. Create kubernetes cluster on digital ocean.
+$ doctl kubernetes cluster create <your_cluster_name>
+_When cluster creates, check the ui and connect to the cluster on the kubernetes dashboard on, "Connect to your cluster".
+2. Paste the connection command on the terminal.
+3. Confirm nodes where created
+4. Navigate to the rgocd 'getting started page' and follow the instruction of installing the argocd resources. 
+https://argo-cd.readthedocs.io/en/stable/getting_started/
+Check the resources:
+$ kubectl get pods -n argocd
+$ kubectl get svc -n argocd
+The argocd server is has a ClusterIP. Inorder to access the argocd server externally, a Load balancer is required.
+5. Follow the instructions to accesss the Argocd API on the getting started page.
+6. When the load balancer has been provisioned, the service type of the argocd server wil change to Load balancer. Use that IP to access the argicd ui.
+7. Follow the login instructions to access the argocd dashboard.
+
+8. Navigate to NEW APP. Give the applicaion a name, lets call it amazon-app.Project name is default.
+9. On Source, paste the https url for the github repository with the manifest files.
+10. Sync policy: Automatic for auto syncing of changes in the manifests in the git repository.
+11. Path: " ./ " if the files are in the root directly
+12. Destination: Use default.
+13. Namespace:default.
+
+Dashboard:
+![creating-app](https://github.com/Noettie/End-to-End-automated-CI-CD-Pipeline-utilizing-GitOps-PART-ONE/assets/108426517/92cebb14-8e26-4666-97dd-bfaa0dbb43b9)
+
+14. Create application. When application is created successfully, the dashboard will look like this:
+
+![healthy_app](https://github.com/Noettie/End-to-End-automated-CI-CD-Pipeline-utilizing-GitOps-PART-ONE/assets/108426517/cdfcf01d-80c2-4e3c-8108-90794701d96a)
+
+
+   
+ 
+
+
+
+
 
 
 

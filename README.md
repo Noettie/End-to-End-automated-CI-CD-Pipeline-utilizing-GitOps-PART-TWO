@@ -46,7 +46,7 @@ _NB: Two repositories required for 2 Jenkins jobs._
 
 * _Install argocd_
 * _Install helm_
-*_ Register a domain name on namecheap/godaddy 
+*_ Register a domain name on namecheap or godaddy_  
 
 ### CD Steps:
 
